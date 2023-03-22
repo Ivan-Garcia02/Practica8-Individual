@@ -1,0 +1,36 @@
+{
+  "name": "dsi-prct08-individual-patrones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output",
+    "start": "tsc-watch --onSuccess \"node dist/holaMundo.js\"",
+    "doc": "typedoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Garcia02/Practica8-Individual.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Garcia02/Practica8-Individual/issues"
+  },
+  "homepage": "https://github.com/Ivan-Garcia02/Practica8-Individual#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.36.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.28"
+  }
+}
